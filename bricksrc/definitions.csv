@@ -47,6 +47,7 @@ https://brickschema.org/schema/Brick#Audio_Visual_Equipment,Equipment related to
 https://brickschema.org/schema/Brick#Auditorium,A space for performances or larger gatherings,
 https://brickschema.org/schema/Brick#Automatic_Mode_Command,"Controls whether or not a device or controller is operating in ""Automatic"" mode",
 https://brickschema.org/schema/Brick#Automatic_Tint_Window,A window with tint control.,
+https://brickschema.org/schema/Brick#Automatic_Tint_Window_Array,An series of Automatic Tint Windows.,
 https://brickschema.org/schema/Brick#Availability_Status,"Indicates if a piece of equipment, system, or functionality is available for operation",
 https://brickschema.org/schema/Brick#Average_Cooling_Demand_Sensor,Measures the average power consumed by a cooling process as the amount of power consumed over some interval,
 https://brickschema.org/schema/Brick#Average_Discharge_Air_Flow_Sensor,The computed average flow of discharge air over some interval,
