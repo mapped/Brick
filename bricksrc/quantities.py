@@ -651,6 +651,11 @@ quantity_definitions = {
                     },
                 },
             },
+            "Total_Pressure": {
+                BRICK.hasQUDTReference: [
+                    QUDTQK["TotalPressure"],
+                ]
+            }
         },
     },
     "Radiance": {
