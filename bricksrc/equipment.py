@@ -19,6 +19,7 @@ equipment_subclasses = {
             },
             "Sensor_Equipment": {
                 "tags": [TAG.Sensor, TAG.Equipment, TAG.ICT],
+                "subclasses": {"Meter": [TAG.Meter, TAG.Equipment]},
             },
             "Audio_Visual_Equipment": {
                 "tags": [TAG.Equipment, TAG.ICT, TAG.Audio, TAG.Visual]
@@ -683,7 +684,9 @@ hvac_subclasses = {
             "Relief_Damper": {"tags": [TAG.Equipment, TAG.Damper, TAG.Relief]},
         },
     },
-    "Condensing_Unit": {"tags": [TAG.Equipment, TAG.Condenser, TAG.Condensing, TAG.Unit]},
+    "Condensing_Unit": {
+        "tags": [TAG.Equipment, TAG.Condenser, TAG.Condensing, TAG.Unit]
+    },
     "Computer_Room_Air_Conditioning": {
         "tags": [
             TAG.Equipment,
