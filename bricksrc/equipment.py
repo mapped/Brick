@@ -236,6 +236,14 @@ equipment_subclasses = {
     "Water_Heater": {
         "tags": [TAG.Water, TAG.Heater, TAG.Equipment],
         "subclasses": {
+            "Electric_Water_Heater": {
+                "tags": [
+                    TAG.Electric,
+                    TAG.Water,
+                    TAG.Heater,
+                    TAG.Equipment,
+                ],
+            },
             "Collection_Basin_Water_Heater": {
                 "tags": [
                     TAG.Collection,
@@ -244,7 +252,75 @@ equipment_subclasses = {
                     TAG.Heater,
                     TAG.Equipment,
                 ],
-            }
+            },
+            "Gas_Water_Heater": {
+                "tags": [
+                    TAG.Gas,
+                    TAG.Water,
+                    TAG.Heater,
+                    TAG.Equipment,
+                ],
+            },
+            "Tank_Water_Heater": {
+                "tags": [
+                    TAG.Tank,
+                    TAG.Water,
+                    TAG.Heater,
+                    TAG.Equipment,
+                ],
+                "subclasses": {
+                    "Tank_Electric_Water_Heater": {
+                        "tags": [
+                            TAG.Electric,
+                            TAG.Tank,
+                            TAG.Water,
+                            TAG.Heater,
+                            TAG.Equipment,
+                        ],
+                        "parents": [BRICK["Electric_Water_Heater"]],
+                    },
+                    "Tank_Gas_Water_Heater": {
+                        "tags": [
+                            TAG.Gas,
+                            TAG.Tank,
+                            TAG.Water,
+                            TAG.Heater,
+                            TAG.Equipment,
+                        ],
+                        "parents": [BRICK["Gas_Water_Heater"]],
+                    },
+                },
+            },
+            "Tankless_Water_Heater": {
+                "tags": [
+                    TAG.Tankless,
+                    TAG.Water,
+                    TAG.Heater,
+                    TAG.Equipment,
+                ],
+                "subclasses": {
+                    "Tankless_Electric_Water_Heater": {
+                        "tags": [
+                            TAG.Electric,
+                            TAG.Tankless,
+                            TAG.Water,
+                            TAG.Heater,
+                            TAG.Equipment,
+                        ],
+                        "parents": [BRICK["Electric_Water_Heater"]],
+                    },
+                    "Tankless_Gas_Water_Heater": {
+                        "tags": [
+                            TAG.Gas,
+                            TAG.Tankless,
+                            TAG.Water,
+                            TAG.Heater,
+                            TAG.Equipment,
+                        ],
+                        "parents": [BRICK["Gas_Water_Heater"]],
+                    },
+                },
+            },
         },
     },
     "Tank": {
